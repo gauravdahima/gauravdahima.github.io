@@ -1,0 +1,121 @@
+
+body {
+    font:normal 12px/1.6em Arial, Helvetica, sans-serif;
+	color:#2a3845;
+	margin:0;
+	padding:0;
+	background:#FFFFFF;
+}
+
+p {
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	margin:0 auto;
+	border-left:1px solid #f0e9eb;
+	border-right:1px solid #f0e9eb;
+	width:632px;
+}
+
+#header{
+	margin: 0 1px;
+}
+
+
+#nav{
+	background:#06a;
+	padding:10px 20px;
+	text-align:center;
+	color:#f6dde3;
+}
+
+#nav a{
+	margin: 0 10px;
+}
+
+#nav a:visited{
+	text-decoration:none;
+	color:#f6dde3;
+}
+
+#bg {
+	height:20px;
+}
+
+#space{
+	height: 10px;
+}
+#nav a:link {
+	text-decoration:none;
+	color:#f6dde3;
+}
+
+
+#nav a:hover{
+	text-decoration:underline;
+	color:#f6dde3;
+}
+
+#main-content{
+	background-color: #f2f2f2;
+	margin:auto;
+	display: block;
+	text-align: center;
+}
+
+#about{
+	color:#7a2e40;
+	text-align: center;
+	padding-top: 10px;
+	margin-left: 50px;
+}
+
+#submit{
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 60px;
+}
+
+#name{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 40px;
+}
+#email{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 40px;
+}
+
+#message{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 20px;
+}
+
+#footer{
+	font-size: 14px;
+	background:#f7f7f7;
+	border-top:3px solid #f0e9eb;
+	padding:10px 15px;
+	clear:both;
+	text-align: center;
+    position: relative;
+}
+
+/* Global Styling */
+
+a:visited, a:link {
+	color:#a43b55;
+	text-decoration:underline;
+	background:none;
+}
+
+a:hover {
+	font-size: 14px;
+	color:#a43b55;
+	text-decoration:none;
+	background:none;
+}

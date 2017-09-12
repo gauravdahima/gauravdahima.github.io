@@ -2,28 +2,31 @@
 <html>
 <head>
     <title>Contact Me</title>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="css/contactMe.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div id="wrapper">
 		<div id="header">
 			<div id="nav">
-				<a href="index.html">Home</a> | <a href="aboutMe.html">About Me</a> | <a href="contactMe.html">Contact Me</a> | <a href="myPhotos.html">My Photos</a>
+				<a href="index.html">Home</a> | <a href="aboutMe.html">About Me</a> | <a href="contactMe.html">Contact Me</a> | <a href="myPhotos.html">My Photos</a> | <a href="galleryAdmin.html">Gallery Admin	</a>
 			</div>
 			<div id="bg"></div>
 		</div>
 		<div id="main-content">
 			<h1 id="about">Contact Me</h1>
-			<p style="text-align:center">You can reach out to Me</p>
-			<ul style="padding: 10px;margin: 15px">
-				<li>Mobile Number : +91-8504004155</li>
-				<li>Email : gauravdahima@gmail.com</li>
-				<li><a href="https://www.linkedin.com/in/gauravdahima/" >Linkedin</a></li>
-			</ul> 
+			<p>Name <input id="name"></p>
+			<div id="space"></div>
+			<p>Email <input id="email"></p>
+			<div id="space"></div>
+			<p>Message <input id="message"></p>
+			<div id="bg"></div>
+			<button id= "submit" type="button" onclick="myFunction()">Submit</button>
 		</div>
+		<div id="bg"></div>
 		<div id="footer">
 			<strong> Made by Gaurav Dahima.</strong><br/>
 		</div>
+		<script src="js/contactMe.js"></script>
 	</div>
 </body>
 </html>

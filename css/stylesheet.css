@@ -127,14 +127,6 @@ p {
 	float:right;
 }
 
-table img{
-	height: 200px;
-	width:200px;
-	border-radius: 10px;
-	border: 1px solid black;
-}
-/* Global Styling */
-
 a:visited, a:link {
 	color:#a43b55;
 	text-decoration:underline;
