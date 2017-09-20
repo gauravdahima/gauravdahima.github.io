@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>ZemosoRestaurant</title>	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="css_Restaurant_Billing_System/stylesheet.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body onload="setRestaurant()">
+    <div style="width:100%;">
+      <div id="header"><h1>Welcome to Zemoso Restaurant</h1></div>
+      <div id="left">
+        <h3 style="text-align: center">Tables</h3>
+        <input type="text" placeholder="Search Table" name="table_input" id ="input1" onkeyup="filterTables()" class="glowing-border" title = "Search by table names">
+        <hr>
+        <div id="tables">
+          
+        </div>
+      </div>
+      <div id="right">
+        <h3 style="text-align: center">Menu</h3>
+        <input type="text" placeholder="Search menu...by course,by food" name="menu_input" id ="input2" onkeyup="filterMenu()" class="glowing-border" title = "Search menu...by course,by food">
+        <hr>
+        <div id="menu">
+
+        </div>
+      </div>
+		</div>
+    <div id="myModal">
+      <div class="modal-content">
+          <span id="close">&times;</span>
+          <div id = "container1">
+            <div id="billHeader"></div>
+          </div>
+          <div id = "container2">
+            <div style="height: 20px"></div>
+            <table style="width:100%" id="billTable">
+            </table>
+          </div>
+          <div id = "container3">
+            <div id="billFooter">CLOSE SESSION (GENERATE BILL)</div>
+          </div>
+      </div>
+    </div> 
+		<script src="js_Restaurant_Billing_System/data.json" type="text/javascript" ></script>
+		<script src="js_Restaurant_Billing_System/script.js" type="text/javascript" ></script>
+	</body>	
+</html>
