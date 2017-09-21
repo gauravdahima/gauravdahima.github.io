@@ -71,7 +71,7 @@ function showBill(ev){
 		row.insertCell(0).innerHTML = i+1;
 		row.insertCell(1).innerHTML = item.name;
 		row.insertCell(2).innerHTML = item.cost;
-		
+
 		row.insertCell(3).innerHTML = '<input type="number" style="align:center;width:50px"></input>';
 		document.getElementsByTagName("input")[i+2].value = table.items[i].item_count;
 		document.getElementsByTagName("input")[i+2].id = 50+i;
@@ -93,20 +93,14 @@ function showBill(ev){
 }
 
 function editBill(ev){
-	latest_input = ev.target;
-	
-	if(ev.target.value == 0){
-		var delete_id = ev.target.id;
-		latest_table.total_items -= latest_table.items[delete_id-50].item_count;
-		latest_table.total_amount -= latest_table.items[delete_id-50].item_count * latest_table.items[delete_id-50].item_cost;
-		latest_table.items.splice(delete_id-50, 1);
-		showBill(latest_target);
-		latest_table.innerHTML = latest_table.name + " | Rs. "+latest_table.total_amount +" | Total items: "+latest_table.total_items;
+	if(ev.target.value <= 0){
+		alert("Item count cannot be zero/negative.");
+		ev.target.value = latest_table.items[ev.target.id-50].item_count;
 	}
 	else{
 		var input_id = ev.target.id;
-		var change = latest_input.value - latest_table.items[input_id - 50].item_count; 
-		latest_table.items[input_id - 50].item_count = latest_input.value;
+		var change = ev.target.value - latest_table.items[input_id - 50].item_count; 
+		latest_table.items[input_id - 50].item_count = ev.target.value;
 		latest_table.total_amount += change * (latest_table.items[input_id -50].item_cost);
 		latest_table.total_items +=change;
 		latest_table.innerHTML = latest_table.name + " | Rs. "+latest_table.total_amount +" | Total items: "+latest_table.total_items;
